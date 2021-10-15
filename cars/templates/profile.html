@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    <h1 class="header">Пользователь: {{ current_user.get_name() }}.</h1>
+{% endblock %}
+
+{% block content %}
+<p class="content"><a href="{{ url_for('logout') }}">Выйти из профиля</a>
+{% endblock %}

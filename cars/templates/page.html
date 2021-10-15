@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 class="header">
+        {{ error_text }}
+    </h1>
+    <p class="content">
+            Вернуться на <a href="{{ url_for('index') }}">главную</a>
+    </p>
+{% endblock %}
